@@ -1,0 +1,14 @@
+{
+  RequestCharge: 7.43,
+  Headers: {},
+  StatusCode: Created,
+  Resource: {
+    id: Guid_1,
+    LastName: Andersen,
+    Address: {
+      State: WA,
+      County: King,
+      City: Seattle
+    }
+  }
+}
