@@ -35,7 +35,7 @@ public Task ScrubbingExample()
     return Verifier.Verify(target);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L42-L55' title='Snippet source file'>snippet source</a> | <a href='#snippet-example' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L41-L54' title='Snippet source file'>snippet source</a> | <a href='#snippet-example' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Resulting in:
@@ -60,14 +60,14 @@ public Task DisableExample()
 {
     var target = new Person
     {
-        Dob = LocalDateTime.FromDateTime(new DateTime(2010, 2, 10))
+        Dob = LocalDateTime.FromDateTime(new(2010, 2, 10))
     };
 
     return Verifier.Verify(target)
         .DontScrubNodaTimes();
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L57-L71' title='Snippet source file'>snippet source</a> | <a href='#snippet-disable' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L56-L70' title='Snippet source file'>snippet source</a> | <a href='#snippet-disable' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Resulting in:

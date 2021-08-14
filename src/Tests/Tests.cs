@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ServiceModel.Syndication;
 using System.Threading.Tasks;
 using NodaTime;
 using VerifyTests;
@@ -61,7 +60,7 @@ public class Tests
     {
         var target = new Person
         {
-            Dob = LocalDateTime.FromDateTime(new DateTime(2010, 2, 10))
+            Dob = LocalDateTime.FromDateTime(new(2010, 2, 10))
         };
 
         return Verifier.Verify(target)
