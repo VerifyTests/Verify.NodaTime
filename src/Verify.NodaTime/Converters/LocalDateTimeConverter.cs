@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using NodaTime;
 using NodaTime.Serialization.JsonNet;
 using VerifyTests;

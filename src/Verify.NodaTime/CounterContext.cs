@@ -1,7 +1,4 @@
-﻿ using System.Collections.Concurrent;
- using System.Runtime.CompilerServices;
- using System.Threading;
- using NodaTime;
+﻿ using NodaTime;
  using VerifyTests;
 
  class CounterContext
@@ -72,7 +69,6 @@
          return annualDateCache.GetOrAdd(input, _ => Interlocked.Increment(ref currentAnnualDate));
      }
 
-     [ModuleInitializer]
      public static void Init()
      {
          VerifierSettings.OnVerify(Start, Stop);
