@@ -9,31 +9,31 @@ public class Tests
     [Fact]
     public Task DontScrub()
     {
-        return Verifier.Verify(new AnnualDate(10, 10)).DontScrubNodaTimes();
+        return Verify(new AnnualDate(10, 10)).DontScrubNodaTimes();
     }
 
     [Fact]
     public Task AnnualDateValue()
     {
-        return Verifier.Verify(new AnnualDate(10, 10));
+        return Verify(new AnnualDate(10, 10));
     }
 
     [Fact]
     public Task InstantValue()
     {
-        return Verifier.Verify(Instant.FromDateTimeUtc(DateTime.UtcNow));
+        return Verify(Instant.FromDateTimeUtc(DateTime.UtcNow));
     }
 
     [Fact]
     public Task LocalDateValue()
     {
-        return Verifier.Verify(LocalDate.FromDateTime(DateTime.Now));
+        return Verify(LocalDate.FromDateTime(DateTime.Now));
     }
 
     [Fact]
     public Task LocalDateTimeValue()
     {
-        return Verifier.Verify(LocalDateTime.FromDateTime(DateTime.Now));
+        return Verify(LocalDateTime.FromDateTime(DateTime.Now));
     }
 
     #region Example
@@ -46,7 +46,7 @@ public class Tests
             Dob = LocalDateTime.FromDateTime(DateTime.Now)
         };
 
-        return Verifier.Verify(target);
+        return Verify(target);
     }
 
     #endregion
@@ -61,7 +61,7 @@ public class Tests
             Dob = LocalDateTime.FromDateTime(new(2010, 2, 10))
         };
 
-        return Verifier.Verify(target)
+        return Verify(target)
             .DontScrubNodaTimes();
     }
 
@@ -75,18 +75,18 @@ public class Tests
     [Fact]
     public Task OffsetDateValue()
     {
-        return Verifier.Verify(new OffsetDate(LocalDate.MinIsoValue, Offset.Zero));
+        return Verify(new OffsetDate(LocalDate.MinIsoValue, Offset.Zero));
     }
 
     [Fact]
     public Task ZonedDateTimeValue()
     {
-        return Verifier.Verify(new ZonedDateTime(Instant.FromDateTimeUtc(DateTime.UtcNow), DateTimeZone.Utc));
+        return Verify(new ZonedDateTime(Instant.FromDateTimeUtc(DateTime.UtcNow), DateTimeZone.Utc));
     }
 
     [Fact]
     public Task YearMonthValue()
     {
-        return Verifier.Verify(new YearMonth(10, 10));
+        return Verify(new YearMonth(10, 10));
     }
 }
