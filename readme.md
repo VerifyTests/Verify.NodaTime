@@ -32,7 +32,7 @@ public Task ScrubbingExample()
         Dob = LocalDateTime.FromDateTime(DateTime.Now)
     };
 
-    return Verifier.Verify(target);
+    return Verify(target);
 }
 ```
 <sup><a href='/src/Tests/Tests.cs#L39-L52' title='Snippet source file'>snippet source</a> | <a href='#snippet-example' title='Start of snippet'>anchor</a></sup>
@@ -63,7 +63,7 @@ public Task DisableExample()
         Dob = LocalDateTime.FromDateTime(new(2010, 2, 10))
     };
 
-    return Verifier.Verify(target)
+    return Verify(target)
         .DontScrubNodaTimes();
 }
 ```
