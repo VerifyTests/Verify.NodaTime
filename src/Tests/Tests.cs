@@ -1,7 +1,4 @@
 ﻿using NodaTime;
-using VerifyTests;
-using VerifyXunit;
-using Xunit;
 
 [UsesVerify]
 public class Tests

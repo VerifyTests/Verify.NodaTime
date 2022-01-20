@@ -1,20 +1,15 @@
 ﻿using Newtonsoft.Json;
 using NodaTime;
 using NodaTime.Serialization.JsonNet;
-using VerifyTests;
 
 class ZonedDateTimeConverter :
     WriteOnlyJsonConverter<ZonedDateTime>
 {
     JsonConverter zonedDateTimeConverter = NodaConverters.CreateZonedDateTimeConverter(DateTimeZoneProviders.Tzdb);
 
-    public override void WriteJson(
-        JsonWriter writer,
-        ZonedDateTime value,
-        JsonSerializer serializer,
-        IReadOnlyDictionary<string, object> context)
+    public override void Write(VerifyJsonWriter writer, ZonedDateTime value, JsonSerializer serializer)
     {
-        if (!context.ScrubNodaTimes())
+        if (!writer.Context.ScrubNodaTimes())
         {
             zonedDateTimeConverter.WriteJson(writer, value, serializer);
             return;

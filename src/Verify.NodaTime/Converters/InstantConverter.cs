@@ -1,18 +1,13 @@
 ﻿using Newtonsoft.Json;
 using NodaTime;
 using NodaTime.Serialization.JsonNet;
-using VerifyTests;
 
 class InstantConverter :
     WriteOnlyJsonConverter<Instant>
 {
-    public override void WriteJson(
-        JsonWriter writer,
-        Instant value,
-        JsonSerializer serializer,
-        IReadOnlyDictionary<string, object> context)
+    public override void Write(VerifyJsonWriter writer, Instant value, JsonSerializer serializer)
     {
-        if (!context.ScrubNodaTimes())
+        if (!writer.Context.ScrubNodaTimes())
         {
             NodaConverters.InstantConverter.WriteJson(writer, value, serializer);
             return;

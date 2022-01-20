@@ -1,18 +1,13 @@
 ﻿using Newtonsoft.Json;
 using NodaTime;
 using NodaTime.Serialization.JsonNet;
-using VerifyTests;
 
 class AnnualDateConverter :
     WriteOnlyJsonConverter<AnnualDate>
 {
-    public override void WriteJson(
-        JsonWriter writer,
-        AnnualDate value,
-        JsonSerializer serializer,
-        IReadOnlyDictionary<string, object> context)
+    public override void Write(VerifyJsonWriter writer, AnnualDate value, JsonSerializer serializer)
     {
-        if (!context.ScrubNodaTimes())
+        if (!writer.Context.ScrubNodaTimes())
         {
             NodaConverters.AnnualDateConverter.WriteJson(writer, value, serializer);
             return;

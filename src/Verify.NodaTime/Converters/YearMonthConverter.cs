@@ -1,17 +1,12 @@
 ﻿using Newtonsoft.Json;
 using NodaTime;
-using VerifyTests;
 
 class YearMonthConverter :
     WriteOnlyJsonConverter<YearMonth>
 {
-    public override void WriteJson(
-        JsonWriter writer,
-        YearMonth value,
-        JsonSerializer serializer,
-        IReadOnlyDictionary<string, object> context)
+    public override void Write(VerifyJsonWriter writer, YearMonth value, JsonSerializer serializer)
     {
-        if (!context.ScrubNodaTimes())
+        if (!writer.Context.ScrubNodaTimes())
         {
             writer.WriteValue(value);
             return;
