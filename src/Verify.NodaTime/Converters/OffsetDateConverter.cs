@@ -1,15 +1,14 @@
-﻿using Newtonsoft.Json;
-using NodaTime;
+﻿using NodaTime;
 using NodaTime.Serialization.JsonNet;
 
 class OffsetDateConverter :
     WriteOnlyJsonConverter<OffsetDate>
 {
-    public override void Write(VerifyJsonWriter writer, OffsetDate value, JsonSerializer serializer)
+    public override void Write(VerifyJsonWriter writer, OffsetDate value)
     {
         if (!writer.Context.ScrubNodaTimes())
         {
-            NodaConverters.OffsetDateConverter.WriteJson(writer, value, serializer);
+            NodaConverters.OffsetDateConverter.WriteJson(writer, value, writer.Serializer);
             return;
         }
 

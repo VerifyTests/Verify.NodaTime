@@ -1,10 +1,9 @@
-﻿using Newtonsoft.Json;
-using NodaTime;
+﻿using NodaTime;
 
 class YearMonthConverter :
     WriteOnlyJsonConverter<YearMonth>
 {
-    public override void Write(VerifyJsonWriter writer, YearMonth value, JsonSerializer serializer)
+    public override void Write(VerifyJsonWriter writer, YearMonth value)
     {
         if (!writer.Context.ScrubNodaTimes())
         {
