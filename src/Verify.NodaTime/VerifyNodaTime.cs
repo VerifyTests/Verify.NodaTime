@@ -5,11 +5,10 @@ public static class VerifyNodaTime
     public static void Enable()
     {
         CounterContext.Init();
-        VerifierSettings.ModifySerialization(settings =>
-        {
-            settings.AddExtraSettings(serializerSettings =>
+        VerifierSettings
+            .AddExtraSettings(_ =>
             {
-                var converters = serializerSettings.Converters;
+                var converters = _.Converters;
                 converters.Add(new AnnualDateConverter());
                 converters.Add(new InstantConverter());
                 converters.Add(new LocalDateConverter());
@@ -19,13 +18,10 @@ public static class VerifyNodaTime
                 converters.Add(new ZonedDateTimeConverter());
                 converters.Add(new YearMonthConverter());
             });
-        });
     }
 
-    public static void DontScrubNodaTimes(this VerifySettings settings)
-    {
+    public static void DontScrubNodaTimes(this VerifySettings settings) =>
         settings.Context["ScrubNodaTimes"] = false;
-    }
 
     public static SettingsTask DontScrubNodaTimes(this SettingsTask settings)
     {

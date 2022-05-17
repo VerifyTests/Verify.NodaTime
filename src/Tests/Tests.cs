@@ -4,34 +4,24 @@
 public class Tests
 {
     [Fact]
-    public Task DontScrub()
-    {
-        return Verify(new AnnualDate(10, 10)).DontScrubNodaTimes();
-    }
+    public Task DontScrub() =>
+        Verify(new AnnualDate(10, 10)).DontScrubNodaTimes();
 
     [Fact]
-    public Task AnnualDateValue()
-    {
-        return Verify(new AnnualDate(10, 10));
-    }
+    public Task AnnualDateValue() =>
+        Verify(new AnnualDate(10, 10));
 
     [Fact]
-    public Task InstantValue()
-    {
-        return Verify(Instant.FromDateTimeUtc(DateTime.UtcNow));
-    }
+    public Task InstantValue() =>
+        Verify(Instant.FromDateTimeUtc(DateTime.UtcNow));
 
     [Fact]
-    public Task LocalDateValue()
-    {
-        return Verify(LocalDate.FromDateTime(DateTime.Now));
-    }
+    public Task LocalDateValue() =>
+        Verify(LocalDate.FromDateTime(DateTime.Now));
 
     [Fact]
-    public Task LocalDateTimeValue()
-    {
-        return Verify(LocalDateTime.FromDateTime(DateTime.Now));
-    }
+    public Task LocalDateTimeValue() =>
+        Verify(LocalDateTime.FromDateTime(DateTime.Now));
 
     #region Example
 
@@ -70,20 +60,14 @@ public class Tests
     }
 
     [Fact]
-    public Task OffsetDateValue()
-    {
-        return Verify(new OffsetDate(LocalDate.MinIsoValue, Offset.Zero));
-    }
+    public Task OffsetDateValue() =>
+        Verify(new OffsetDate(LocalDate.MinIsoValue, Offset.Zero));
 
     [Fact]
-    public Task ZonedDateTimeValue()
-    {
-        return Verify(new ZonedDateTime(Instant.FromDateTimeUtc(DateTime.UtcNow), DateTimeZone.Utc));
-    }
+    public Task ZonedDateTimeValue() =>
+        Verify(new ZonedDateTime(Instant.FromDateTimeUtc(DateTime.UtcNow), DateTimeZone.Utc));
 
     [Fact]
-    public Task YearMonthValue()
-    {
-        return Verify(new YearMonth(10, 10));
-    }
+    public Task YearMonthValue() =>
+        Verify(new YearMonth(10, 10));
 }
