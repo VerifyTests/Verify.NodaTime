@@ -76,7 +76,7 @@ Resulting in:
 <a id='snippet-Tests.DisableExample.verified.txt'></a>
 ```txt
 {
-  Dob: 2010-02-10T00:00:00
+  Dob: DateTimeOffset_1
 }
 ```
 <sup><a href='/src/Tests/Tests.DisableExample.verified.txt#L1-L3' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.DisableExample.verified.txt' title='Start of snippet'>anchor</a></sup>
