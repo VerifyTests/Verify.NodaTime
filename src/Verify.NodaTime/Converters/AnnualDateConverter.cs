@@ -1,5 +1,5 @@
 ﻿using NodaTime;
-using NodaTime.Serialization.JsonNet;
+using Argon.NodaTime;
 
 class AnnualDateConverter :
     WriteOnlyJsonConverter<AnnualDate>

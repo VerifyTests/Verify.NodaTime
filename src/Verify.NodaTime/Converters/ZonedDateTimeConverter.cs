@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using Argon;
 using NodaTime;
-using NodaTime.Serialization.JsonNet;
+using Argon.NodaTime;
 
 class ZonedDateTimeConverter :
     WriteOnlyJsonConverter<ZonedDateTime>
