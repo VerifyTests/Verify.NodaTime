@@ -4,6 +4,7 @@ public static class VerifyNodaTime
 {
     public static void Enable()
     {
+        InnerVerifier.ThrowIfVerifyHasBeenRun();
         CounterContext.Init();
         VerifierSettings
             .AddExtraSettings(_ =>
