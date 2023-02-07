@@ -4,11 +4,11 @@
 
     [ModuleInitializer]
     public static void Init() =>
-        VerifyNodaTime.Enable();
+        VerifyNodaTime.Initialize();
 
     #endregion
 
     [ModuleInitializer]
     public static void InitOther() =>
-        VerifyDiffPlex.Initialize();
+        VerifierSettings.InitializePlugins();
 }
