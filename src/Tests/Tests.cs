@@ -1,6 +1,5 @@
 ﻿using NodaTime;
 
-[UsesVerify]
 public class Tests
 {
     [Fact]
