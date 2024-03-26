@@ -29,7 +29,7 @@ public static void Init() =>
 Then all Noda date/times will be scrubbed:
 
 <!-- snippet: Example -->
-<a id='snippet-example'></a>
+<a id='snippet-Example'></a>
 ```cs
 [Fact]
 public Task ScrubbingExample()
@@ -42,7 +42,7 @@ public Task ScrubbingExample()
     return Verify(target);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L25-L38' title='Snippet source file'>snippet source</a> | <a href='#snippet-example' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L25-L38' title='Snippet source file'>snippet source</a> | <a href='#snippet-Example' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Resulting in:
@@ -60,7 +60,7 @@ Resulting in:
 To disable scrubbing use `DontScrubNodaTimes`:
 
 <!-- snippet: Disable -->
-<a id='snippet-disable'></a>
+<a id='snippet-Disable'></a>
 ```cs
 [Fact]
 public Task DisableExample()
@@ -74,7 +74,7 @@ public Task DisableExample()
         .DontScrubNodaTimes();
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L40-L54' title='Snippet source file'>snippet source</a> | <a href='#snippet-disable' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L40-L54' title='Snippet source file'>snippet source</a> | <a href='#snippet-Disable' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Resulting in:
