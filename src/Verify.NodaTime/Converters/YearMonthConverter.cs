@@ -1,6 +1,4 @@
-﻿using NodaTime;
-
-class YearMonthConverter :
+﻿class YearMonthConverter :
     WriteOnlyJsonConverter<YearMonth>
 {
     public override void Write(VerifyJsonWriter writer, YearMonth value)

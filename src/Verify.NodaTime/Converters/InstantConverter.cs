@@ -1,7 +1,4 @@
-﻿using NodaTime;
-using Argon.NodaTime;
-
-class InstantConverter :
+﻿class InstantConverter :
     WriteOnlyJsonConverter<Instant>
 {
     public override void Write(VerifyJsonWriter writer, Instant value)

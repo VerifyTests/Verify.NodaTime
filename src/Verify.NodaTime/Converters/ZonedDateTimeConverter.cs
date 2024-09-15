@@ -1,8 +1,4 @@
-﻿using Argon;
-using NodaTime;
-using Argon.NodaTime;
-
-class ZonedDateTimeConverter :
+﻿class ZonedDateTimeConverter :
     WriteOnlyJsonConverter<ZonedDateTime>
 {
     JsonConverter zonedDateTimeConverter = NodaConverters.CreateZonedDateTimeConverter(DateTimeZoneProviders.Tzdb);

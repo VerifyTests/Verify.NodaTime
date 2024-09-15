@@ -1,7 +1,5 @@
 ﻿namespace VerifyTests;
 
-using Converters;
-
 public static class VerifyNodaTime
 {
     public static bool Initialized { get; private set; }

@@ -1,9 +1,5 @@
-﻿namespace VerifyTests.Converters;
-
-using Argon.NodaTime;
-using NodaTime;
-
-public class DateIntervalConverter : WriteOnlyJsonConverter<DateInterval>
+﻿public class DateIntervalConverter :
+    WriteOnlyJsonConverter<DateInterval>
 {
     public override void Write(VerifyJsonWriter writer, DateInterval value)
     {

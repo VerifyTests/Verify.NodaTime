@@ -42,7 +42,7 @@ public Task ScrubbingExample()
     return Verify(target);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L25-L38' title='Snippet source file'>snippet source</a> | <a href='#snippet-Example' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L23-L36' title='Snippet source file'>snippet source</a> | <a href='#snippet-Example' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Resulting in:
@@ -74,7 +74,7 @@ public Task DisableExample()
         .DontScrubNodaTimes();
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L40-L54' title='Snippet source file'>snippet source</a> | <a href='#snippet-Disable' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L38-L52' title='Snippet source file'>snippet source</a> | <a href='#snippet-Disable' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Resulting in:

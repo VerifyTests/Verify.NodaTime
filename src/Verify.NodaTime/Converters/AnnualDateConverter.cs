@@ -1,7 +1,4 @@
-﻿using NodaTime;
-using Argon.NodaTime;
-
-class AnnualDateConverter :
+﻿class AnnualDateConverter :
     WriteOnlyJsonConverter<AnnualDate>
 {
     public override void Write(VerifyJsonWriter writer, AnnualDate value)

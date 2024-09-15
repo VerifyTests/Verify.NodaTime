@@ -1,7 +1,4 @@
-﻿using NodaTime;
-using Argon.NodaTime;
-
-class LocalDateTimeConverter :
+﻿class LocalDateTimeConverter :
     WriteOnlyJsonConverter<LocalDateTime>
 {
     public override void Write(VerifyJsonWriter writer, LocalDateTime value)

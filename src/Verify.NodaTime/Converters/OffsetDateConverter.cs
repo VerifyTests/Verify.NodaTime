@@ -1,7 +1,4 @@
-﻿using NodaTime;
-using Argon.NodaTime;
-
-class OffsetDateConverter :
+﻿class OffsetDateConverter :
     WriteOnlyJsonConverter<OffsetDate>
 {
     public override void Write(VerifyJsonWriter writer, OffsetDate value)

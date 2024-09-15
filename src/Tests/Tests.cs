@@ -1,6 +1,4 @@
-﻿using NodaTime;
-
-public class Tests
+﻿public class Tests
 {
     [Fact]
     public Task DontScrub() =>
