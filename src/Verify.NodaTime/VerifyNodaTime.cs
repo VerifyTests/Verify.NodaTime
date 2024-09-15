@@ -1,5 +1,7 @@
 ﻿namespace VerifyTests;
 
+using Converters;
+
 public static class VerifyNodaTime
 {
     public static bool Initialized { get; private set; }
@@ -27,6 +29,7 @@ public static class VerifyNodaTime
                 converters.Add(new OffsetDateTimeConverter());
                 converters.Add(new ZonedDateTimeConverter());
                 converters.Add(new YearMonthConverter());
+                converters.Add(new DateIntervalConverter());
             });
     }
 

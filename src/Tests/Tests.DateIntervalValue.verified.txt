@@ -1,0 +1,1 @@
+﻿DateInterval[LocalDate_1, LocalDate_2]
