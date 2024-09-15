@@ -69,4 +69,8 @@ public class Tests
     [Fact]
     public Task YearMonthValue() =>
         Verify(new YearMonth(10, 10));
+
+    [Fact]
+    public Task DateIntervalValue() =>
+        Verify(new DateInterval(LocalDate.MinIsoValue, LocalDate.MaxIsoValue));
 }
