@@ -7,7 +7,7 @@
     <PackageVersion Include="Argon.NodaTime" Version="0.27.0" />
     <PackageVersion Include="MarkdownSnippets.MsBuild" Version="27.0.2" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
-    <PackageVersion Include="NodaTime" Version="3.2.1" />
+    <PackageVersion Include="NodaTime" Version="3.2.2" />
     <PackageVersion Include="Polyfill" Version="7.24.0" />
     <PackageVersion Include="ProjectDefaults" Version="1.0.150" />
     <PackageVersion Include="Verify" Version="29.1.0" />
