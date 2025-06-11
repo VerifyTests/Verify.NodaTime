@@ -9,9 +9,9 @@ Adds [Verify](https://github.com/VerifyTests/Verify) support for scrubbing [Noda
 **See [Milestones](../../milestones?state=closed) for release notes.**
 
 
-## NuGet package
+## NuGet
 
-https://nuget.org/packages/Verify.NodaTime/
+ * https://nuget.org/packages/Verify.NodaTime
 
 
 ## Usage
