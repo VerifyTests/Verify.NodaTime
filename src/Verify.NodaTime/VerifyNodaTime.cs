@@ -40,8 +40,17 @@ public static class VerifyNodaTime
         return settings;
     }
 
+    public static void DontScrub() =>
+        shouldScrub = false;
+
+    static bool shouldScrub = true;
+
     internal static bool ScrubNodaTimes(this IReadOnlyDictionary<string, object> context)
     {
+        if (!shouldScrub)
+        {
+            return false;
+        }
         if (context.TryGetValue("ScrubNodaTimes", out var value))
         {
             return (bool) value;

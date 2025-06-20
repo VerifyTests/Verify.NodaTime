@@ -67,6 +67,9 @@ Resulting in:
 <sup><a href='/src/Tests/Tests.ScrubbingExample.verified.txt#L1-L3' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.ScrubbingExample.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
+
+## Disable scrubbing
+
 To disable scrubbing use `DontScrubNodaTimes`:
 
 <!-- snippet: Disable -->
@@ -97,6 +100,21 @@ Resulting in:
 }
 ```
 <sup><a href='/src/Tests/Tests.DisableExample.verified.txt#L1-L3' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.DisableExample.verified.txt' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+To disable scrubbing globally use `VerifyNodaTime.DontScrub`:
+
+<!-- snippet: GlobalDontScrub -->
+<a id='snippet-GlobalDontScrub'></a>
+```cs
+[ModuleInitializer]
+public static void Init()
+{
+    VerifyNodaTime.DontScrub();
+    VerifyNodaTime.Initialize();
+}
+```
+<sup><a href='/src/StaticSettingsTests/ModuleInitializer.cs#L3-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-GlobalDontScrub' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
