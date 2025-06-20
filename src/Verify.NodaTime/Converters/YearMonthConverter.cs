@@ -5,7 +5,7 @@
     {
         if (!writer.Context.ScrubNodaTimes())
         {
-            writer.WriteValue(value);
+            writer.Serialize(value.ToString());
             return;
         }
 
