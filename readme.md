@@ -4,7 +4,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/ej794va900x9257f?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-NodaTime)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.NodaTime.svg)](https://www.nuget.org/packages/Verify.NodaTime/)
 
-Adds [Verify](https://github.com/VerifyTests/Verify) support for scrubbing [NodaTime](https://nodatime.org/) values.
+Adds [Verify](https://github.com/VerifyTests/Verify) support for scrubbing [NodaTime](https://nodatime.org/) values.<!-- singleLineInclude: intro. path: /docs/intro.include.md -->
 
 **See [Milestones](../../milestones?state=closed) for release notes.**
 
@@ -14,9 +14,9 @@ Adds [Verify](https://github.com/VerifyTests/Verify) support for scrubbing [Noda
 
 ### Entity Framework Extensions<!-- include: zzz. path: /docs/zzz.include.md -->
 
-[Entity Framework Extensions](https://entityframework-extensions.net/) is a major sponsor and is proud to contribute to the development this project.
+[Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.NodaTime) is a major sponsor and is proud to contribute to the development this project.
 
-[![Entity Framework Extensions](docs/zzz.png)](https://entityframework-extensions.net)<!-- endInclude -->
+[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/Verify.NodaTime/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.NodaTime)<!-- endInclude -->
 
 
 ## NuGet
